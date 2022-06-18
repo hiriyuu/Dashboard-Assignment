@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+    
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <h2 style="margin: 1rem; font-size: 1.8rem;">Okle<span class="danger">wdeh</span></h2>
+            <div class="top">
+                
+                <div class="logo">
+                    
+                    <img src ="./images/logo.png">
+                    
+                </div>
+            <div class="close" id="close-htn">
+                <span class="material-symbols-rounded">close</span>
+                
+            </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-symbols-rounded">space_dashboard</span>
+                    <h3>Dashboard</h3>
+
+                </a>
+
+                <a href="#" class="active">
+                    <span class="material-symbols-rounded">mail</span>
+                    <h3>Messages</h3>
+
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-rounded">description</span>
+                    <h3>Report</h3>
+
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-rounded">settings </span>
+                    <h3>Settings</h3>
+
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-rounded">person</span>
+                    <h3>Account</h3>
+
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-rounded">logout</span>
+                    <h3>Logout</h3>
+
+                </a>
+            </div>
+        </aside>
+<!--Aside ended-->
+        <main>
+            <h1 style="margin-top: 1rem;"> Welcome to your Dashboard</h1>
+            <div class="projects" id="projects">
+                <h2>Projects</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project Title</th>
+                            <th>Project </th>
+                            <th>Project ID</th>
+                            <th>Vendor</th>
+                            <th>Offer</th>
+                            <th>Creator</th>
+                        </tr>
+                    </thead>
+                    <tbody id="project_body">
+                       
+                        
+                    </tbody>
+                </table>
+                <a href="#" id="show_all_projects">Show all</a>
+            </div>
+            <!--end project-->
+
+            <div class="projects" id="items">
+                <h2>Items</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Item ID </th>
+                            <th>Documents</th>
+                            <th>Creator</th>
+                            <th>Offers</th>
+                        </tr>
+                    </thead>
+                    <tbody id="items_body">
+                        
+                        
+                    </tbody>
+                </table>
+                <a href="#" id="show_all_items">Show all</a>
+            </div>
+
+        </main>
+
+    <!--main end-->
+    <div class="right">
+        <div class="top">
+            <button id="menu-btn">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+            <div class="theme-toggler">
+                <span class="material-symbols-rounded active">light_mode</span>
+                <span class="material-symbols-rounded">dark_mode </span>
+            </div>
+            <div class="profile">
+                <div class="info">
+                    <p>Hey, <b>Devika</b></p>
+                    <small class="text-muted">Admin</small>
+                </div>
+                <div class="profile-photo">
+                    <img src="./images/profile-1.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+        <!--top end-->
+        <div class="recent-updates">
+            <h2>Recent Updates</h2>
+            <div class="updates">
+                <div class="update">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="">
+
+                    </div>
+                    <div class="messages">
+                        <p><b>Carlton</b> created the Luxurious Rubber Car on 14/06/22</p>
+                        <small class="text-muted">2 minutes ago</small>
+                    </div>
+                </div>
+
+                <div class="update">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="">
+
+                    </div>
+                    <div class="messages">
+                        <p><b>Carlton</b> created the Luxurious Rubber Car on 14/06/22</p>
+                        <small class="text-muted">2 minutes ago</small>
+                    </div>
+                </div>
+
+                <div class="update">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="">
+
+                    </div>
+                    <div class="messages">
+                        <p><b>Carlton</b> created the Luxurious Rubber Car on 14/06/22</p>
+                        <small class="text-muted">2 minutes ago</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--end of recent updates-->
+        <div class="sales-analytics">
+            <h2>Sales Analytics</h2>
+
+            <div class="item offline">
+                <div class="icon">
+                    <span class="material-symbols-rounded">local_mall</span>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>OFFLINE ORDERS</h3>
+                        <small class="text-muted">Last 24 hours</small>
+                    </div>
+                    <h5 class="danger">-17%</h5>
+                    <h3>1100</h3>
+                </div>
+            </div>
+
+            <div class="item online">
+                <div class="icon">
+                    <span class="material-symbols-rounded">shopping_cart</span>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>ONLINE ORDERS</h3>
+                        <small class="text-muted">Last 24 hours</small>
+                    </div>
+                    <h5 class="success">+39%</h5>
+                    <h3>3849</h3>
+                </div>
+            </div>
+
+            <div class="item customers">
+                <div class="icon">
+                    <span class="material-symbols-rounded">person</span>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>NEW CUSTOMERS</h3>
+                        <small class="text-muted">Last 24 hours</small>
+                    </div>
+                    <h5 class="success">+29%</h5>
+                    <h3>849</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+     function projectapi() {  
+       $.ajax({
+        url: "https://62aa3913371180affbd1e027.mockapi.io/api/v1/dashboard/tasks",
+        type: 'GET',
+        dataType: 'json', 
+        success: function(res) {
+            console.log(res);
+            let x = document.getElementById("project_body")
+            console.log(x);
+            for(var i=0;i<20;i++) {
+                
+
+                if(i>=4){
+                    let el= `<tr class="extra_hidden"><td>`+res[i].title+`</td><td>`+res[i].project+`</td><td>`+res[i].id+
+                    '</td><td>'+res[i].vendor+`</td><td>`+res[i].offer+`</td><td>`+res[i].Created_by+`</td></tr>`;
+                    x.innerHTML+=(el);
+                }
+                else{
+                    let el= `<tr><td>`+res[i].title+`</td><td>`+res[i].project+`</td><td>`+res[i].id+
+                    '</td><td>'+res[i].vendor+`</td><td>`+res[i].offer+`</td><td>`+res[i].Created_by+`</td></tr>`;
+                    x.innerHTML+=(el);
+                }
+            }
+        }
+    });
+}
+function itemapi() {  
+       $.ajax({
+        url: "https://62aa3913371180affbd1e027.mockapi.io/api/v1/dashboard/items",
+        type: 'GET', 
+        dataType: 'json', 
+        success: function(res) {
+            console.log(res);
+            let x = document.getElementById("items_body")
+            console.log(x);
+            for(var i=0;i<20;i++) {
+                
+
+                if(i>=4){
+                    let el= `<tr class="extra_hidden"><td>`+res[i].item+`</td><td>`+res[i].id+`</td><td>`+res[i].no_of_documents+
+                    '</td><td>'+res[i].created_by+`</td><td>`+res[i].no_of_offer+`</td></tr>`;
+                    x.innerHTML+=(el);
+
+                }
+                else{
+                    let el= `<tr><td>`+res[i].item+`</td><td>`+res[i].id+`</td><td>`+res[i].no_of_documents+
+                    '</td><td>'+res[i].created_by+`</td><td>`+res[i].no_of_offer+`</td></tr>`;
+                    x.innerHTML+=(el);
+                }
+            }
+        }
+    });
+}
+    
+    
+
+$(document).ready(function() {
+    projectapi();
+    itemapi();
+});
+    
+var showAllProjects = document.getElementById("show_all_projects");
+showAllProjects.addEventListener('click', () => {
+    
+    for(i=0;i<16;i++){
+        var hiddenProject = document.querySelector(`#project_body > tr:nth-child(${i + 5})`)
+        hiddenProject.className = ""
+    }
+    showAllProjects.style.display = "none"
+
+})
+
+var showAllItems = document.getElementById("show_all_items");
+showAllItems.addEventListener('click', () => {
+    
+    for(i=0;i<16;i++){
+        var hiddenProject = document.querySelector(`#items_body > tr:nth-child(${i + 5})`)
+        hiddenProject.className = ""
+    }
+    showAllItems.style.display = "none"
+
+})
+
+const themeToggler = document.querySelector(".theme-toggler");
+themeToggler.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme-variables');
+})
+    </script>
+</body>
+</html>
